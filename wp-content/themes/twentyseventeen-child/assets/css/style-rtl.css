@@ -1,0 +1,50 @@
+.has-sidebar:not(.error404) #primary {
+	float: right;
+}
+
+.has-sidebar #secondary {
+	float: left;
+}
+
+.site-footer .widget .product_list_widget li a.remove, .widget .product_list_widget li a.remove {
+	float: left;
+	margin-top: 2px;
+}
+
+.woocommerce #content div.product div.thumbnails a, .woocommerce div.product div.thumbnails a, .woocommerce-page #content div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a {
+	float: right;
+	margin-right: 0;
+	margin-left: 3.8%;
+}
+
+.single-product .woocommerce-product-rating .star-rating {
+	float: right;
+	margin-right: 0;
+	margin-left: .25em;
+}
+
+.star-rating span {
+	float: right;
+	left: auto;
+	right: 0;
+}
+
+.star-rating::before {
+	float: right;
+	right: 0;
+	left: auto;
+}
+
+.star-rating span::before {
+	right: 0;
+	left: auto;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+	float: right;
+	margin: 0 0 2.992em 2.8%;
+}
+
+.onsale {
+	left: auto;
+	right: 0;
+}

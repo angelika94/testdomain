@@ -45,6 +45,9 @@
 	display: table-header-group;
 }
 
+.cart {
+	margin-bottom: 10px;
+}
 /* popup styles 
 ***************************************/
 .popup-overlay {
