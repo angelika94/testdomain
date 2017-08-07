@@ -38,7 +38,18 @@
 .star-rating span::before {
 	right: 0;
 	left: auto;
+
 }
+.widget_product_search .search-field {
+	padding-right: 0.7em;
+    padding-left: 100px;
+}
+
+.widget_product_search input[type=submit] {
+	left: .5em;
+	right: auto;
+}
+
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
 	float: right;
 	margin: 0 0 2.992em 2.8%;

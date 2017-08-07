@@ -73,3 +73,17 @@ function my_taxonomies_books() {
 	register_taxonomy( 'book_genre', 'books', $args );
 }
 add_action( 'init', 'my_taxonomies_books', 0 );
+
+
+/**
+ * Reorder single product hooks.
+ */
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 15 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 50 );
